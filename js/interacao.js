@@ -46,10 +46,30 @@ function mostrarfrase()
     }
 }
 
+function mostrarerro()
+{
+    const erro = document.getElementById('overlay');
+
+    if ( erro.style.display == 'none' || erro.style.display == '')
+    {
+        erro.style.display = 'block';
+    }
+
+    else
+    {
+        erro.style.display = 'none';
+    }
+
+    
+}
+
+
+
 function bundle()
 {
     const fts = document.getElementById('fotos');
     
 }
+
 
 
