@@ -31,24 +31,10 @@ closeBtn.addEventListener("click", function () {
   modal.classList.remove("open-modal");
 });
 
-function mostrarfrase()
-{
-    const frase = document.getElementById('frase');
-
-    if (frase.style.display === 'none' || frase.style.display === '')
-    {
-        frase.style.display = 'block';
-    } 
-
-    else
-    {
-        frase.style.display = 'none';
-    }
-}
 
 function mostrarerro()
 {
-    const erro = document.getElementById('overlay');
+    const erro = document.getElementById('fundo');
 
     if ( erro.style.display == 'none' || erro.style.display == '')
     {
@@ -60,15 +46,22 @@ function mostrarerro()
         erro.style.display = 'none';
     }
 
-    
 }
-
 
 
 function bundle()
 {
-    const fts = document.getElementById('fotos');
+    const fts = document.getElementById('corpo');
     
+    if ( fts.style.display == 'none' || fts.style.display == '')
+    {
+        fts.style.display = 'block';
+    }
+
+    else
+    {
+        fts.style.display = 'none';
+    }
 }
 
 
